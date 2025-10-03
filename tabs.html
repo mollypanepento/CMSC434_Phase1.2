@@ -7,55 +7,64 @@
   <link rel="stylesheet" type="text/css" href="tabs.css">
 </head>
 <body>
-  <div id="tab1" class="tabcontent">
+  <div class="device-viewport">
+    <div class="device">
+      <div id="Text" class="tabcontent">
+        <h1>Text</h1>
     
+      </div>
+      
+      <div id="LR" class="tabcontent">
+        <h1>Paris</h1>
+        <p>Paris is the capital of France.</p>
+      </div>
+      
+      <div id="Colors" class="tabcontent">
+        
+      </div>
+      
+      <div id="Profile" class="tabcontent">
+        
+      </div>
     
-  </div>
-  
-  <div id="tab2" class="tabcontent">
+      <div id="Choices" class="tabcontent">
+        
+      </div>
     
-  </div>
-  
-  <div id="tab3" class="tabcontent">
-    
-  </div>
-  
-  <div id="tab4" class="tabcontent">
-    
-  </div>
+      <div id="Todo" class="tabcontent">
+        
+      </div>
 
-  <div id="tab5" class="tabcontent">
-    
-  </div>
 
-  <div id="tab6" class="tabcontent">
-    
+      <!-- code inspired by W3Schools https://www.w3schools.com/howto/howto_js_tab_header.asp -->
+      <button class="tablink" onclick="openTab('Text', this)" id="defaultOpen">
+        <img src="icons/text.png" alt="Text Icon" class="tab-icon">
+        <div>Text</div>
+      </button>
+      <button class="tablink" onclick="openTab('LR', this)">
+        <img src="icons/lr.png" alt="LR Icon" class="tab-icon">
+        <div>LR</div>
+      </button>
+      <button class="tablink" onclick="openTab('Colors', this)">
+        <img src="icons/colors.png" alt="Colors Icon" class="tab-icon">
+        <div>Color</div>
+      </button>
+      <button class="tablink" onclick="openTab('Profile', this)">
+        <img src="icons/profile.png" alt="Profile Icon" class="tab-icon">
+        <div>Profile</div>
+      </button>
+      <button class="tablink" onclick="openTab('Choices', this)">
+        <img src="icons/choice.png" alt="Choices Icon" class="tab-icon">
+        <div>Choices</div>
+      </button>
+      <button class="tablink" onclick="openTab('Todo', this)">
+        <img src="icons/todo.png" alt="Todo Icon" class="tab-icon">
+        <div>Todo</div>
+      </button> 
+    </div>
   </div>
+ 
 
-<!-- code inspired by W3Schools https://www.w3schools.com/howto/howto_js_tab_header.asp -->
-<button class="tablink" onclick="openTab('Text', this, 'red')" id="defaultOpen">
-  <img src="icons/text.png" alt="Text Icon" class="tab-icon">
-  <div>Text</div>
-</button>
-<button class="tablink" onclick="openTab('LR', this, 'green')">
-  <img src="icons/lr.png" alt="LR Icon" class="tab-icon">
-  <div>LR</div>
-</button>
-<button class="tablink" onclick="openTab('Colors', this, 'blue')">
-  <img src="icons/colors.png" alt="Colors Icon" class="tab-icon">
-  <div>Color</div>
-</button>
-<button class="tablink" onclick="openTab('Profile', this, 'orange')">
-  <img src="icons/profile.png" alt="Profile Icon" class="tab-icon">
-  <div>Profile</div>
-</button>
-<button class="tablink" onclick="openTab('Choices', this, 'orange')">
-  <img src="icons/choice.png" alt="Choices Icon" class="tab-icon">
-  <div>Choices</div>
-</button>
-<button class="tablink" onclick="openTab('Todo', this, 'orange')">
-  <img src="icons/todo.png" alt="Todo Icon" class="tab-icon">
-  <div>Todo</div>
-</button>
+  <script src="tabs.js"></script>
 </body>
 </html>

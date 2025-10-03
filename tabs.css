@@ -1,4 +1,38 @@
-.tab-icon{
-    width: 24px;
-    height: 24px;
+.device {
+    width: 640px;
+    height: 960px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    background: white;
+    overflow: hidden;
+    transform-origin: top left; /* scale relative to top-left */
+  }
+
+.device-viewport .device {
+    transform: scale(0.6906);
+  }
+
+.device-viewport {
+    width: calc(640px * 0.6906);
+    height: calc(960px * 0.6906);
+    margin: 20px auto;
 }
+
+.tab-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.tablink {
+    background-color: #CBC3E3;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 16.666%;
+  }
+
+  .tablink:hover {
+    background-color: #D3D3D3;
+  }
