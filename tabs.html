@@ -1,4 +1,13 @@
-<div id="tab1" class="tabcontent">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phase 1.2</title>
+  <link rel="stylesheet" type="text/css" href="tabs.css">
+</head>
+<body>
+  <div id="tab1" class="tabcontent">
     
     
   </div>
@@ -23,9 +32,30 @@
     
   </div>
 
-<button class="tablink" onclick="openTab('Text', this, 'red')" id="defaultOpen">Text</button>
-<button class="tablink" onclick="openTab('LR', this, 'green')">LR</button>
-<button class="tablink" onclick="openTab('Colors', this, 'blue')">Colors</button>
-<button class="tablink" onclick="openTab('Profile', this, 'orange')">Profile</button>
-<button class="tablink" onclick="openTab('Choices', this, 'orange')">Choices</button>
-<button class="tablink" onclick="openTab('Todo', this, 'orange')">Todo</button>
+<!-- code inspired by W3Schools https://www.w3schools.com/howto/howto_js_tab_header.asp -->
+<button class="tablink" onclick="openTab('Text', this, 'red')" id="defaultOpen">
+  <img src="icons/text.png" alt="Text Icon" class="tab-icon">
+  <div>Text</div>
+</button>
+<button class="tablink" onclick="openTab('LR', this, 'green')">
+  <img src="icons/lr.png" alt="LR Icon" class="tab-icon">
+  <div>LR</div>
+</button>
+<button class="tablink" onclick="openTab('Colors', this, 'blue')">
+  <img src="icons/colors.png" alt="Colors Icon" class="tab-icon">
+  <div>Color</div>
+</button>
+<button class="tablink" onclick="openTab('Profile', this, 'orange')">
+  <img src="icons/profile.png" alt="Profile Icon" class="tab-icon">
+  <div>Profile</div>
+</button>
+<button class="tablink" onclick="openTab('Choices', this, 'orange')">
+  <img src="icons/choice.png" alt="Choices Icon" class="tab-icon">
+  <div>Choices</div>
+</button>
+<button class="tablink" onclick="openTab('Todo', this, 'orange')">
+  <img src="icons/todo.png" alt="Todo Icon" class="tab-icon">
+  <div>Todo</div>
+</button>
+</body>
+</html>
