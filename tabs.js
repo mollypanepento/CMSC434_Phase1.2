@@ -20,3 +20,36 @@ function openTab(tabName, element){
 }
 
 document.getElementById("defaultOpen").click();
+
+// --- Tab 4: Profile modal wiring ---
+const profileImg = document.getElementById('profileImg');
+const profileModal = document.getElementById('profileModal');
+const profileClose = document.getElementById('profileClose');
+
+if (profileImg && profileModal && profileClose) {
+  profileImg.addEventListener('click', () => {
+    profileModal.style.display = 'flex';       // show modal
+    profileModal.setAttribute('aria-hidden', 'false');
+  });
+
+  profileClose.addEventListener('click', () => {
+    profileModal.style.display = 'none';       // hide modal
+    profileModal.setAttribute('aria-hidden', 'true');
+  });
+
+  // click outside the card to close
+  profileModal.addEventListener('click', (e) => {
+    if (e.target === profileModal) {
+      profileModal.style.display = 'none';
+      profileModal.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  // optional: ESC to close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && profileModal.style.display === 'flex') {
+      profileModal.style.display = 'none';
+      profileModal.setAttribute('aria-hidden', 'true');
+    }
+  });
+}

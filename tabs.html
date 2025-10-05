@@ -18,13 +18,27 @@
         
       </div>
       
-      <div id="Colors" class="tabcontent">
-        <!-- TAB 3 GOES HERE -->
-      </div>
+            <div id="Colors" class="tabcontent">
+          <div class="colors-line yellow-on-black">Hello</div>
+         <div class="colors-line purple-on-yellow">Hello</div>
+     </div>
       
       <div id="Profile" class="tabcontent">
-         <!-- TAB 4 GOES HERE -->
+          <div class="profile-wrap">
+         <img id="profileImg" class="profile-img" src="icons/profile.png" alt="Profile photo">
+          <div class="profile-name">Jane Doe</div>
       </div>
+
+  <!-- modal overlay -->
+      <div id="profileModal" class="profile-modal" aria-hidden="true">
+           <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+           <div id="modalTitle" style="font-weight:700; margin-bottom:6px;">Notification</div>
+           <div> You clicked on the profile picture </div>
+           <button id="profileClose" class="close-btn" type="button">Close</button>
+    </div>
+  </div>
+</div>
+
     
       <div id="Choices" class="tabcontent">
          <!-- TAB 5 GOES HERE -->
@@ -35,6 +49,7 @@
       </div>
 
 
+      <div class="tabbar">
       <!-- code inspired by W3Schools https://www.w3schools.com/howto/howto_js_tab_header.asp -->
       <button class="tablink" onclick="openTab('Text', this)" id="defaultOpen">
         <img src="icons/text.png" alt="Text Icon" class="tab-icon">
@@ -61,6 +76,7 @@
         <div>Todo</div>
       </button> 
     </div>
+  </div>
   </div>
  
 
