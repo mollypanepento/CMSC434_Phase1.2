@@ -9,36 +9,64 @@
 <body>
   <div class="device-viewport">
     <div class="device">
+      <!-- code inspired by W3Schools https://www.w3schools.com/howto/howto_js_tab_header.asp -->
       <div id="Text" class="tabcontent">
-        <h1>Text</h1>
-    
+        <h1>Text Screen</h1>
+        <h3>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <p>Scroll down for more!</p>
+        <h3>You made it :)</h3>
       </div>
       
       <div id="LR" class="tabcontent">
-        
+        <h1>Text in Lower Right</h1>
+        <p class = "bottomright">Down Here</p>
       </div>
       
-            <div id="Colors" class="tabcontent">
-          <div class="colors-line yellow-on-black">Hello</div>
+      <div id="Colors" class="tabcontent">
+        <div class="colors-line yellow-on-black">Hello</div>
          <div class="colors-line purple-on-yellow">Hello</div>
-     </div>
+      </div>
       
       <div id="Profile" class="tabcontent">
-          <div class="profile-wrap">
-         <img id="profileImg" class="profile-img" src="icons/profile.png" alt="Profile photo">
+        <div class="profile-wrap">
+          <img id="profileImg" class="profile-img" src="icons/profile.png" alt="Profile photo">
           <div class="profile-name">Jane Doe</div>
+        </div>
+
+        <!-- modal overlay -->
+        <div id="profileModal" class="profile-modal" aria-hidden="true">
+          <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div id="modalTitle" style="font-weight:700; margin-bottom:6px;">Notification</div>
+            <div> You clicked on the profile picture </div>
+            <button id="profileClose" class="close-btn" type="button">Close</button>
+          </div>
+        </div>
       </div>
-
-  <!-- modal overlay -->
-      <div id="profileModal" class="profile-modal" aria-hidden="true">
-           <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-           <div id="modalTitle" style="font-weight:700; margin-bottom:6px;">Notification</div>
-           <div> You clicked on the profile picture </div>
-           <button id="profileClose" class="close-btn" type="button">Close</button>
-    </div>
-  </div>
-</div>
-
     
       <div id="Choices" class="tabcontent">
          <!-- TAB 5 GOES HERE -->
@@ -47,7 +75,6 @@
       <div id="Todo" class="tabcontent">
          <!-- TAB 6 GOES HERE -->
       </div>
-
 
       <div class="tabbar">
       <!-- code inspired by W3Schools https://www.w3schools.com/howto/howto_js_tab_header.asp -->

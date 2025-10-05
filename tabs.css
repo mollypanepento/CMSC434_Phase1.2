@@ -1,116 +1,157 @@
 .device {
-    width: 640px;
-    height: 960px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-    background: white;
-    overflow: hidden;
-    transform-origin: top left; /* scale relative to top-left */
-    position: relative;
-  }
+  width: 640px;
+  height: 960px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  background: white;
+  overflow: hidden;
+  transform-origin: top left; 
+}
 
 .device-viewport .device {
-    transform: scale(0.6906);
-  }
+  transform: scale(0.6906);
+}
 
 .device-viewport {
-    width: calc(640px * 0.6906);
-    height: calc(960px * 0.6906);
-    margin: 20px auto;
+  width: calc(640px * 0.6906);
+  height: calc(960px * 0.6906);
+  margin: 20px auto;
 }
 
 .tab-icon{
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .tablink {
-    background-color: #CBC3E3;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 16.666%;
-  }
-
-  .tablink:hover {
-    background-color: #D3D3D3;
-  }
-
-  .tabcontent {
-  display: none;               
-  height: calc(100% - 120px);   
-  overflow-y: auto;
-  padding: 16px;
-  background: white;
+  color: black;
+  background-color: #CBC3E3;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 16.666%;
 }
 
-  /* --- Tab 3: Colors --- */
+.tablink:hover {
+  background-color: #D3D3D3;
+}
+
+#Text{
+  height: 850px; 
+  overflow: auto; 
+  border: 1px solid #ccc; 
+  padding: 10px;
+  background-color: lightblue;
+}
+
+#LR{
+  height: 850px;
+  border: 1px solid #ccc; 
+  padding: 10px;
+  background-color: lightblue;
+}
+
+.bottomright{
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  font-size:1.5em;
+}
+
+#Colors{
+  height: 850px;
+  border: 1px solid #ccc; 
+  padding: 10px;
+  background-color: lightblue;
+}
+
+#Profile{
+  height: 850px;
+  border: 1px solid #ccc; 
+  padding: 10px;
+  background-color: lightblue;
+}
+
+#Choices{
+  height: 850px;
+  border: 1px solid #ccc; 
+  padding: 10px;
+  background-color: lightblue;
+}
+
+#Todo{
+  height: 850px;
+  border: 1px solid #ccc; 
+  padding: 10px;
+  background-color: lightblue;
+}
+ /* --- Tab 3: Colors --- */
 .colors-line {
-  padding: 10px 12px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  border-radius: 6px;
+padding: 10px 12px;
+margin-bottom: 10px;
+font-weight: 600;
+border-radius: 6px;
 }
 .yellow-on-black {
-  color: yellow;
-  background: black;
+color: yellow;
+background: black;
 }
 .purple-on-yellow {
-  color: purple;
-  background: yellow;
+color: purple;
+background: yellow;
 }
 
 /* --- Tab 4: Profile --- */
 .profile-wrap {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+min-height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
 
-  gap: 12px;
-  text-align: center;
+gap: 12px;
+text-align: center;
 }
 .profile-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+width: 200px;
+height: 200px;
+object-fit: cover;
+border-radius: 50%;
+cursor: pointer;
+box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 .profile-name {
-  font-weight: 700;
-  font-size: 20px;
+font-weight: 700;
+font-size: 20px;
 }
 
 /* in-tab modal */
 .profile-modal {
-  position: absolute;
-  inset: 0;                  
-  background: rgba(0,0,0,0.4);
-  display: none;             
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
+position: absolute;
+inset: 0;                  
+background: rgba(0,0,0,0.4);
+display: none;             
+align-items: center;
+justify-content: center;
+padding: 16px;
 }
 .profile-modal .modal-card {
-  background: white;
-  padding: 18px 22px;
-  border-radius: 10px;
-  max-width: 80%;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+background: white;
+padding: 18px 22px;
+border-radius: 10px;
+max-width: 80%;
+box-shadow: 0 4px 16px rgba(0,0,0,0.25);
 }
 .profile-modal .close-btn {
-  margin-top: 12px;
-  border: none;
-  padding: 10px 14px;
-  cursor: pointer;
-  border-radius: 8px;
-  background: #CBC3E3;
-  font-weight: 600;
+margin-top: 12px;
+border: none;
+padding: 10px 14px;
+cursor: pointer;
+border-radius: 8px;
+background: #CBC3E3;
+font-weight: 600;
 }
 .profile-modal .close-btn:hover {
-  background: #D3D3D3;
+background: #D3D3D3;
 }
