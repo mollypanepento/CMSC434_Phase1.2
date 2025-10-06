@@ -70,50 +70,53 @@
          <!-- TAB 5 GOES HERE -->
          <div class="choices-screen">
           <h2>-Choices Screen-</h2>
-        
+      
           <!-- Radio button section -->
           <p>Camera Type #1:</p>
-          <input type="radio" id="dslr" name="camera1" value="DSLR" checked>
-          <label for="dslr">DSLR</label><br>
-          <input type="radio" id="mirrorless" name="camera1" value="Mirrorless">
-          <label for="mirrorless">Mirrorless</label><br><br>
-        
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 5px;">
+            <div style="display: flex; align-items: center; gap: 5px;">
+              <input type="radio" id="dslr" name="camera1" value="DSLR" checked>
+              <label for="dslr">DSLR</label>
+            </div>
+            <div style="display: flex; align-items: center; gap: 5px;">
+              <input type="radio" id="mirrorless" name="camera1" value="Mirrorless">
+              <label for="mirrorless">Mirrorless</label>
+            </div>
+          </div>
+          <br>
+      
           <!-- Drop-down section -->
           <p>Camera Type #2:</p>
           <select id="camera2">
             <option value="DSLR">DSLR</option>
             <option value="Mirrorless">Mirrorless</option>
-          </select><br><br>
-        
+          </select>
+          <br><br>
+      
           <!-- Button to show choice result -->
           <button id="showChoiceBtn">Print something based on above choices...</button>
-        
+      
           <!-- Display the result -->
           <p id="choiceResult" style="margin-top:10px; font-weight:bold;"></p>
         </div>
-        
+      
         <script>
-          // Get references to elements
           const showBtn = document.getElementById('showChoiceBtn');
           const result = document.getElementById('choiceResult');
-        
+      
           showBtn.addEventListener('click', () => {
-            // Get radio button selection
             const camera1 = document.querySelector('input[name="camera1"]:checked').value;
-            // Get drop-down selection
             const camera2 = document.getElementById('camera2').value;
-        
-            // Display result
+      
             result.textContent = `You selected ${camera1} for Camera 1 and ${camera2} for Camera 2.`;
           });
         </script>
-
       </div>
     
       <div id="Todo" class="tabcontent">
          <!-- TAB 6 GOES HERE -->
          <div id="myDIV" class="header">
-          <h2>My To Do List</h2>
+          <h2>To Do List</h2>
           <input type="text" id="myInput" placeholder="Title...">
           <span onclick="newElement()" class="addBtn">Add</span>
         </div>
